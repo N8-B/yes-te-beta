@@ -3,6 +3,8 @@
 $white:		       #ffffff
 $ivory:            #F6F6F8
 $beige:		       #E5E3D7
+$beigeAlt:	       #E0D9B5
+$beigeDark:	       #DDD5AE
 $grayDark:	       #1E1E1E	
 $grayMedium:       #DFE0DA
 $grayLight:        #EFF0EA
@@ -35,9 +37,9 @@ $accent-color:     $grayDark
 $bg-color:         $white
 $link-color:       $blue
 $selection-color:  $yellowMedium
-$blockquote-color: $accent-color
+$blockquote-color: $redAlt
 $overlay-color:    $white
-$endnote-color:    $goldLight
+$endnote-color:    $beigeAlt
 $endnoteDark-color:  $redAlt
 $chevron-bullet-color: $redAlt
 $numbered-bullet-color: rgba($grayMedium, 1)
@@ -45,24 +47,25 @@ $numbered-bullet-text-color: darken($grayMedium, 50%)
 $numbered-bullet-border-color: darken($numbered-bullet-color, 15%)
 
 /* Article Titles Color Variables */
-$title-color: $black
-$subTitle-color: $black
-$articleTitle-color: $black
+$title-color: $redAlt
+$subTitle-color: $text-color
+$articleTitle-color: $redAlt
+$articleType-color: lighten($black, 70%)
 
 /* Footer */
-$footer-bg-color: lighten($black, 90%)
+$footer-bg-color: lighten($black, 90%) 
 
 /* Article Ordered and Unordered Color Variables */
 $orderedList-color: $redAlt
 $unorderedList-color: $redAlt
 
 /* Table Color Variables */
-$table-header-color: $grayDark
-$table-headerText-color: $white
-$table-border-color: rgba($table-header-color, 0.125)
-$table-border: 2px solid $table-border-color
-$table-background: rgba($table-border-color, 0.125)
-$table-stripe-color: darken($table-header-color, 5)
+$table-header-color: $beigeAlt
+$table-headerText-color: $text-color
+$table-border-color: rgba($table-header-color, 0.5)
+$table-border: 2px solid rgba($table-border-color, 0.5)
+$table-background: rgba($table-border-color, 0.3)
+$table-stripe-color: $table-header-color
 $table-padding: 0.5em
 
 // Typography Mixins and Variables //
